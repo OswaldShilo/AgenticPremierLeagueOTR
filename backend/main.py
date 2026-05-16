@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 import agent
 from config import POLL_INTERVAL
-from routers import fixtures, f1, ai as ai_router
+from routers import fixtures, f1, ai as ai_router, youtube as youtube_router
 
 
 # --- WebSocket connection manager ---
@@ -56,6 +56,7 @@ app.add_middleware(
 app.include_router(fixtures.router)
 app.include_router(f1.router)
 app.include_router(ai_router.router)
+app.include_router(youtube_router.router)
 
 
 # --- WebSocket chat endpoint ---

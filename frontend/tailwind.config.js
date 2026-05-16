@@ -6,7 +6,10 @@ export default {
         pitch: '#1a472a',
         card: '#1e1e2e',
         surface: '#12121f',
-        accent: '#00d4aa',
+        accent: '#2563eb',
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
     },
   },
